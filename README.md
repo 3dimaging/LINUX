@@ -6,28 +6,33 @@ for i in *_tumor_*.pkl; do mv $i ${i/*_tumor_/tumor_}; done
 
 # bash command on HPC
 [liw17@biowulf ~]$ history
+
     1  12:54  cd Figure5/
+    
     2  12:54  ls .
+    
     3  12:54  vi distofall.R
+    
     4  14:24  sjobs
-    5  14:57  sjobs
-    6  16:12  sjobs
-    7  16:31  sjobs
-    8  20:21  sjobs
-    9  20:36  squeue
+    
    10  20:37  sinfo
+   
    11  12:15  module load emacs
+   
    12  12:15  emacs
+   
    13  12:17  emacs &
+   
    14  12:17  detach %+ #
-   15  12:38  emacs
+   
    16  11:56  module spider git
-   17  11:56  sinteractive
+   
    18  17:35  sinteractive
+   
    19  17:53  logout
-   20  17:53  exit
+   
    21  17:57  exit
-   22  17:32  emacs
+   
    23  17:33  module spider emacs
    24  17:33  module load emacs/24.5
    25  17:33  emacs
