@@ -1,5 +1,9 @@
 # Linux Commands, Tricks, Tips, etc.
 
+# Check the number of files
+
+ls -1 | wc -l
+
 # Display disk space 
 
 df -H
