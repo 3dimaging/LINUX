@@ -1,4 +1,9 @@
-# Linux Commands, Tricks, Tips, etc. 
+# Linux Commands, Tricks, Tips, etc.
+
+# Display disk space 
+df -H
+du
+
 
 # change filename 
 #! /bin/bash  
@@ -34,49 +39,90 @@ for i in *_tumor_*.pkl; do mv $i ${i/*_tumor_/tumor_}; done
    21  17:57  exit
    
    23  17:33  module spider emacs
+   
    24  17:33  module load emacs/24.5
+   
    25  17:33  emacs
+   
    26  17:56  module spider genome
+   
    27  17:57  module load pseudogenome/2015-04-01
+   
    28  17:58  exit
+   
    29  17:13  sinteractive
+   
    30  17:53  sinteractive
+   
    31  17:58  logout
+   
    32  17:32  sinteractive
+   
    33  17:58  logout
+   
    34  15:27  ls .
+   
    35  15:27  cd Documents/
+   
    36  15:27  cd Figure5/
+   
    37  15:27  ls .
+   
    38  15:27  vi F5CD4PCF.R
+   
    39  15:37  ls .
+   
    40  15:37  ls -al
+   
    41  15:37  vi F5CD4PCF.R
+   
    42  15:41  ls .
+   
    43  15:41  chmod 777 CD4K3EST.R
+   
    44  15:41  chmod 777 F5CD4K3est.R
+   
    45  15:42  ls .
+   
    46  15:42  cd ..
+   
    47  15:42  ls .
+   
    48  15:42  vi F5CD4PCF.sh
+   
    49  15:44  ls .
+   
    50  15:45  mv CD4K3EST.sh F5CD4K3EST.sh
+   
    51  15:45  ls .
+   
    52  15:45  chmod 777 F5CD4K3EST.sh
+   
    53  15:45  ls .
+   
    54  15:49  sbatch --ntasks=64 --ntasks-per-core=1 [--mem-per-cpu=50g] F5CD4K3EST.sh
+   
    55  15:50  sbatch --ntasks=64 --ntasks-per-core=1 --mem-per-cpu=50g F5CD4K3EST.sh
+   
    56  15:50  sbatch --ntasks=24 --ntasks-per-core=1 --mem-per-cpu=20g F5CD4K3EST.sh
+   
    57  15:51  sbatch --ntasks=5 --ntasks-per-core=1 --mem-per-cpu=20g F5CD4K3EST.sh
+   
    58  15:55  sjobs
+   
    59  15:57  sbatch --ntasks=100 --ntasks-per-core=1 --mem-per-cpu=5g F5CD4K3EST.sh
+   
    60  16:01  module spider parallel
+   
    61  16:52  sjobs
+   
    62  16:52  cd  Figure5/
+   
    63  16:52  ls .
    64  16:53  cd ..
    65  16:53  ls .
    66  16:54  vi slurm_66857333.out
+   
    67  16:55  vi cd  Figure5/
    68  16:55  cd Figure5/
    69  16:55  ls .
